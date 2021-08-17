@@ -1,8 +1,8 @@
 import { Route, Switch } from 'react-router-dom'
 
-import GlobalFeed from './pages/globalFeed/GlobalFeed'
-import Article from './pages/article/Article'
-import Authentication from './pages/authentication/Authentication'
+import GlobalFeed from 'pages/globalFeed/GlobalFeed'
+import Article from 'pages/article/Article'
+import Authentication from 'pages/authentication/Authentication'
 
 export default () => {
     return (
