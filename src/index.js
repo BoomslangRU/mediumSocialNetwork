@@ -1,11 +1,16 @@
-import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import { BrowserRouter } from 'react-router-dom'
+
+import Routes from './Routes'
 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+const App = () => {
+  return <div className="App">
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  </div>
+}
+
+
+ReactDOM.render(<App />, document.getElementById('root'))
