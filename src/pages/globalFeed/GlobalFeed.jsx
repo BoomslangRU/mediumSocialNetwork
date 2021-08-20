@@ -1,5 +1,5 @@
 const GlobalFeed = () => {
-    return <div>GlobalFeed</div>
+   return <div>GlobalFeed</div>
 }
 
 export default GlobalFeed
