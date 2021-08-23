@@ -1,18 +1,21 @@
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
-import { CurrentChildrenProvider } from 'contexts/currentUser'
 
+import { CurrentChildrenProvider } from 'contexts/currentUser'
 import TopBar from 'components/TopBar'
 import Routes from 'Routes'
+import CurrentUserChecker from 'components/CurrentUserChecker'
 
 
 const App = () => {
    return (
       <CurrentChildrenProvider>
-         <BrowserRouter>
-            <TopBar />
-            <Routes />
-         </BrowserRouter>
+         <CurrentUserChecker>
+            <BrowserRouter>
+               <TopBar />
+               <Routes />
+            </BrowserRouter>
+         </CurrentUserChecker>
       </CurrentChildrenProvider>
    )
 }
