@@ -38,7 +38,7 @@ const TopBar = () => {
                            className='nav-link'
                         >
                            <img
-                              className='suer-pic'
+                              className='user-pic'
                               src={currentUserState.currentUser.image}
                               alt=''
                            />
