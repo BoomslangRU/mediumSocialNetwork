@@ -17,8 +17,7 @@ const Authentication = props => {
    const [password, setPassword] = useState('')
    const [username, setUsername] = useState('')
    const [isSuccessFullSubmit, setIsSuccessFullSubmit] = useState(false)
-   const [currentUserState, setCurrentUserState] = useContext(CurrentUserContext)
-   console.log('currentUserState :', currentUserState);
+   const [, setCurrentUserState] = useContext(CurrentUserContext)
 
    // custom hooks 
    const [{ isLoading, response, error }, doFetch] = useFetch(apiUrl)
